@@ -2,8 +2,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.2/bootstrap-5.3.2/dist/css/bootstrap.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+
+    <form>
+        <div class="mb-3 form-floating  w-75">
+            <input type="text" name="nom" id="nom" class="form-control" placeholder="">
+            <label for="nom">Nom</label>
+        </div>
+        <div class="mb-3 form-floating w-75">
+            <input type="text" name="prenom" id="prenom" class="form-control" placeholder="">
+            <label for="prenom">Prenom</label>
+        </div>
+        <!-- <div class="input-group mb-3 w-75">
+            <span class="input-group-text" style="width: 10rem;">Nom et Prenom</span>
+            <input type="text" name="nom" id="nom" class="form-control" aria-label="nom">
+            <input type="text" name="prenom" id="prenom" class="form-control" aria-label="prenom">
+        </div>
+        <div class="mb-3 align-items-center row">
+            <label for="sexe" class="col-sm-2 col-form-label">Gender</label>
+            <div class="col-sm-5">
+                <select name="" id="sexe" class="form-select" style="cursor: pointer;" aria-label="select your gender">
+                    <option selected>Your gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div> -->
+        
+
+        <!-- <div class="mb-3 row  align-items-center">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-5">
+                <input type="email" name="email" id="email" class="form-control" aria-label="emailhelp">
+            </div>
+        </div> -->
+
+
+        <div class="mb-3 form-floating w-75">
+            <input type="email" name="email" id="email" class="form-control" placeholder="">
+            <label for="email">Email</label>
+        </div>
+
+        <div class="mb-3 form-floating w-75">
+                <input type="password" class="form-control" name="password" id="password" aria-describedby="passwordLength" placeholder="">
+                <label for="password">Password</label>
+                <div class="form-text mb-3" id="passwordLength">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji        
+                </div>
+            </div>
+        </div>
+        
+        <div class="mb-3 w-75">
+            <input type="file" name="" id="formFile" class="form-control form-control-lg" title="Inserer votre photo" aria-label="Inserer votre photo">
+        </div>
+        <div class="mb-3 form-floating w-75">
+                <input class="form-control" list="region" id="regionField" placeholder="">
+                <label for="regionField" class="">Your region</label>
+                <datalist id="region">
+                    <option value="Maritime" />
+                    <option value="Plateau" />
+                    <option value="Central" />
+                    <option value="Kara" />
+                    <option value="Savane" />
+                </datalist>
+        </div>
+        
+        <div class="mb-3 align-items-center">
+            <label for="">You know</label>
+                <div class="form-check form-check-inline col-sm-1">
+                    <input type="checkbox" name="html" id="checkDefault" class="btn-check">
+                    <label for="checkDefault" class="btn btn-outline-primary fw-bold" >HTML</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-1">
+                    <input type="checkbox" name="css" id="checkcss" class="btn-check">
+                    <label for="checkcss" class="btn btn-outline-primary fw-bold">CSS</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-2">
+                    <input type="checkbox" name="bootstrap" id="checkbootstrap" class="btn-check">
+                    <label for="checkbootstrap" class="btn btn-outline-primary fw-bold">BOOTSTRAP</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-2">
+                    <input type="checkbox" name="javascript" id="checkjavascript" class="btn-check">
+                    <label for="checkjavascript" class="btn btn-outline-primary fw-bold">JAVASCRIPT</label>
+                </div>
+                <div class="form-check form-check-inline col-sm-3">
+                    <input type="checkbox" name="mysql" id="checkmysql" class="btn-check">
+                    <label for="checkmysql" class="btn btn-outline-primary fw-bold">MYSQL</label>
+                </div>
+        </div>
+        <div class="mb-3 row align-items-center">
+            <label for="" class="col-sm-3 col-form-label">Are you Homophobic?</label>
+            <div class="col-sm-5">
+                <input type="radio" name="homo" class="btn-check" id="homo-yes">
+                <label for="homo-yes" class="btn btn-outline-secondary">Yes</label>
+                <input type="radio" name="homo" id="homo-no" class="btn-check">
+                <label for="homo-no" class="btn btn-outline-secondary">No</label>
+            </div>
+        </div>
+        <div class="mb-3 align-items-center w-75">
+            <div class="input-group">
+                <span class="input-group-text">+228</span>
+                <input type="tel" name="num" id="num" class="form-control" aria-label="Numero">
+            </div>
+        </div>
+        <div class="form-check form-switch">
+            <input type="checkbox" class="form-check-input" id="switchDefault" role="switch" >
+            <label for="switchDefault" class="form-check-label">Do you like anime?</label>
+        </div>
+
+        <div class="mb-3 form-floating w-75">
+            <textarea name="comment" id="comment" class="form-control form-control" style="resize: none; height: 100px;" placeholder=""></textarea>
+            <label for="comment">Write a comment</label>
+
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" id="check1" class="form-check-input">
+            <label for="check1" class="form-check-label">Check me out</label>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+    <script src="./bootstrap-5.3.2/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
