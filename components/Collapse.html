@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link rel="stylesheet" href="../bootstrap-5.3.2/bootstrap-5.3.2/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
+</head>
+<body>
+
+        <!-- <a type="button" class="btn btn-primary mb-2" href="#collapseExemple" data-bs-toggle="collapse" role="button">
+            Button with data-bs-target
+        </a>
+    
+    <div style="min-height: 120px;">
+        <div class="collapse collapse-horizontal" id="collapseExemple">
+            <div class="card card-body" style="width: 300px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deserunt consequuntur unde dolore et fuga consectetur alias, asperiores molestias possimus voluptatibus?
+            </div>
+        </div>
+    </div> -->
+
+    <div class="row">
+        <div class="col-sm-4">
+            <a href="#collapse1" class="btn btn-outline-primary" data-bs-toggle="collapse">Toggle first element</a>
+
+            <div class="collapse multi-collapse" id="collapse1">
+                <div class="card card-body" style="width: 350px;" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatibus?
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <a href="#collapse2" class="btn btn-outline-primary" data-bs-toggle="collapse">Toggle second element</a>
+
+            <div class="collapse collapse-horizontal multi-collapse" id="collapse2">
+                <div class="card card-body" style="width: 350px;" >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, voluptatibus?
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <a href="collapse" class="btn btn-outline-primary" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Toggle both elements</a>
+        </div>
+    </div>
+    
+    <script src="../bootstrap-5.3.2/bootstrap-5.3.2/dist/js/bootstrap.bundle.js"></script>   
+    </script>
+</body>
+</html>
